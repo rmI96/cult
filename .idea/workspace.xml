@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="77f3bdb2-0bf3-48ef-be8c-d27ae040711e" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="77f3bdb2-0bf3-48ef-be8c-d27ae040711e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/archive.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/archive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/assets/images/icon-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/assets/images/icon-01.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/assets/images/icon-010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/assets/style/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/assets/style/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/assets/style/scss/error_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/assets/style/scss/error_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/assets/style/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/assets/style/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/content/content-excerpt.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/content/content-excerpt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/content/content-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/content/content-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/content/content-single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/content/content-single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/content/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/content/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/header/excerpt-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cult/template-parts/header/excerpt-header.php" afterDir="false" />
+    </list>
+>>>>>>> dev
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

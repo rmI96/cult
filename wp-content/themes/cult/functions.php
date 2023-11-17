@@ -24,10 +24,16 @@ add_filter( 'show_admin_bar', '__return_false' );
 
 
 if( function_exists('acf_add_options_page') ) {
-
     acf_add_options_page();
-
     acf_add_options_sub_page('Header');
     acf_add_options_sub_page('Footer');
     acf_add_options_sub_page('Post');
 }
+
+function prefix_category_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    }
+    return $title;
+}
+add_filter( 'get_the_archive_title', 'prefix_category_title' );

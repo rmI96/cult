@@ -1,3 +1,6 @@
+<?php 
+    global $wp;
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -9,7 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
     <?php wp_head(); ?>
 
@@ -24,10 +27,10 @@
     <header class="header">
         <div class="container-cs">
             <div class="header__inner">
-                <div class="logo">
+                <a class="logo" href="<?php echo get_home_url(); ?>">
                     <img src="<?php the_field('logo', 'option'); ?>" alt="Logo" />
-                </div>
-                <div class="nav">
+                </a>
+                <nav class="nav">
                     <ul class="menu">
                         <?php while( have_rows('menu', 'option') ): the_row(); ?>
                             <li><a href="#"><?php the_sub_field('title'); ?></a>
@@ -35,7 +38,9 @@
                                 <?php if( have_rows('items') ): ?>
                                     <ul class="sub-menu">
                                         <?php while( have_rows('items') ): the_row(); ?>
-                                            <li><a href="<?php the_sub_field('page'); ?>"><?php the_sub_field('name'); ?></a></li>
+                                            <li>
+                                                <a class="<?php if( home_url($wp->request) . '/' == get_sub_field('page') ): ?>active<?php endif; ?>" href="<?php the_sub_field('page'); ?>"><?php the_sub_field('name'); ?></a>
+                                            </li>
                                         <?php endwhile; ?>
                                     </ul>
                                 <?php endif; ?>
@@ -49,7 +54,7 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
+                </nav>
                 <div class="header__burger">
                     <div class="open">
                         <span></span>

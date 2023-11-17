@@ -102,9 +102,6 @@
           display: none!important;
         }
       }
-      .wpd-comment-header .wpd-comment-share{
-        display: none!important;
-      }
       .wpd-auth .wpd-login a {
         color: #00acff;
         font-weight: 600;
@@ -125,9 +122,11 @@
         color: #00acff;
         pointer-events: none;
       }
+      .wpd-comment .wpd-avatar img,
+      #wpdcom .wpd-comment .wpd-avatar img.avatar,
       .wpd-comment .wpd-blog-administrator .wpd-avatar img,
       .wpd-comment .wpd-blog-post_author .wpd-avatar img{
-        border-color: #00acff;
+        border-color: #d0d0d0!important;
       }
       .wpdiscuz-sort-buttons{
         background-color: #ffffff;
@@ -186,14 +185,35 @@
           background-color: #dff4ff;
         }
       }
-      .wpd-tools{
-        display: none!important;
-      }
+      
       .wpd-comment .wpd-follow-link{
         display: none;
       }
       .wpd-comment .wpd-reply-to{
         border-left-color: #dff4ff;
+      }
+      .wpd-form .wpdiscuz-textarea-wrap{
+        padding-top: 0;
+      }
+      .wpd-blog-post_author{
+        .wpd-comment-label{
+          display: none;
+        }
+      }
+      .wpd-thread-head .wpd-thread-info{
+        border-bottom: none!important;
+      }
+      .wpd-thread-head .wpdiscuz-user-settings{
+        display: none!important;
+      }
+      .wpd-comment-header .wpd-comment-share{
+        display: none!important;
+      }
+      .wpd-thread-head .wpd-thread-filter{
+        display: none!important;
+      }
+      .wpd-tools{
+        display: none!important;
       }
     }
   }
@@ -226,6 +246,7 @@
     top: 5px;
   }
 }
+
 
 /* LanguageMenu */
 .menu .menu__with-icon{
@@ -260,5 +281,88 @@
         max-width: 20px;
       }
     }
+  }
+}
+
+.block-98723{
+  &__title{
+    .icon{
+      display: inline-block;
+      line-height: 0;
+      max-width: 28px;
+      margin-right: 8px;
+      img{
+        max-width: 100%;
+      }
+    }
+    > span{
+      vertical-align: middle;
+    }
+  }
+  &__list{
+    margin-bottom: -5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      margin-bottom: 5px;
+      position: relative;
+      flex: 0 0 25%;
+      a{
+        border-radius: 4px;
+        font-size: .9rem;
+        letter-spacing: .02em;
+        color: #0a335c;
+        text-decoration: none;
+        padding: 5px 10px 5px 32px;
+        transition: all .34s ease-out;
+        &:after{
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          background-image: url('../../images/icon-arrow-01.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 20px 20px;
+          position: absolute;
+          left: 5px;
+          top: 4px;
+          transition: all .34s ease-out;
+        }
+        &:hover{
+          background-color: #dff4ff;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px){
+  .block-98723__list li {
+      flex: 0 0 33.33%;
+  }
+}
+@media (max-width: 568px){
+  .block-98723__list li {
+      flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 360px){
+  .block-98723__list li {
+      flex: 0 0 100%;
+  }
+}
+
+
+/* Footer */
+.footer{
+  &__copyright{
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 300;
   }
 }

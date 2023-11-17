@@ -172,6 +172,36 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         }
 
+        //
+
+        /*###############*/
+        /* Parallax */
+        /*###############*/
+
+        if(jQuery(window).width() > 991){
+            new Rellax('.rellax', {
+                center: true
+            });
+        }
+
+        if(jQuery(window).width() > 991){
+            jQuery('.move-objects').parallax();
+        }
+
+
+        /*###############*/
+        /* Scroll */
+        /*###############*/
+        jQuery('a.on-scroll').on('click', function(event){
+            event.preventDefault();
+
+            let a = jQuery(this).attr('href'),
+                t = jQuery(a).offset().top - 30;
+
+            jQuery('body,html').animate({scrollTop: t}, 800);
+
+        });
+
 
     })();
 

@@ -1,3 +1,10 @@
 /*
 Theme Name: Cult
 */
+.footer__block .menu.type2 li.current-lang a{
+    pointer-events: none;
+    opacity: 0.6;
+}
+.header__inner .sub-menu>li.current-lang{
+    display: none;
+}

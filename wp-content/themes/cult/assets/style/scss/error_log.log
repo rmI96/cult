@@ -4,3 +4,4 @@
 11/14/23 10:32:45: style.scss - parse error: failed at `{\rtf1}` C:\Front\OpenServer\domains\cult.loc\wp-content\themes\cult\assets\style\scss\style.scss on line 1, at column 0
 11/14/23 10:33:48: style.scss - parse error: failed at `{\rtf1}` C:\Front\OpenServer\domains\cult.loc\wp-content\themes\cult\assets\style\scss\style.scss on line 1, at column 0
 11/14/23 11:46:22: style.scss - parse error: failed at `color: ;` C:\Front\OpenServer\domains\cult.loc\wp-content\themes\cult\assets\style\scss\style.scss on line 167, at column 7
+11/17/23 3:23:41: style.scss - parse error: failed at `color: color: rgba(10, 51, 92, 1);` C:\Front\OpenServer\domains\cult.loc\wp-content\themes\cult\assets\style\scss\style.scss on line 391, at column 5

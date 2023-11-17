@@ -185,7 +185,7 @@
           background-color: #dff4ff;
         }
       }
-      
+
       .wpd-comment .wpd-follow-link{
         display: none;
       }
@@ -336,6 +336,17 @@
         }
       }
     }
+    &__content{
+      font-size: 13px;
+      line-height: 1.5em;
+      margin-top: 6px;
+      padding: 0 5px;
+    }
+    &.type2{
+      li{
+        flex: 0 0 100%;
+      }
+    }
   }
 }
 
@@ -364,5 +375,37 @@
     margin-top: 50px;
     font-size: 14px;
     font-weight: 300;
+  }
+}
+
+/* Breadcrumbs */
+.breadcrumbs{
+  margin-top: 5px;
+  span{
+    display: inline-block;
+    color: rgba(10, 51, 92, 0.6);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+  }
+  a{
+    color: rgba(10, 51, 92, 1);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    &:after{
+      content: '';
+      display: block;
+      width: 17px;
+      height: 17px;
+      background-image: url("../../images/icon-arrow-02.png");
+      background-size: 14px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
   }
 }

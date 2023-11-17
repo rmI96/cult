@@ -7,6 +7,13 @@
 <?php get_header(); ?>
 
 <div class="container-cs">
+    <div class="breadcrumbs">
+        <?php
+        if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }
+        ?>
+    </div>
 
 	<?php
 	while ( have_posts() ) :
@@ -14,7 +21,7 @@
 	?>
 
 	<!-- CONTENT -->
-    <div class="sp-pt-60 sp-pb-60 sp-pt-lg-40 sp-pb-lg-40">
+    <div class="sp-pt-40 sp-pb-60 sp-pb-lg-40">
     	<div class="sp-mb-30">
     		<?php get_template_part( 'template-parts/content/content-single' ); ?>
     	</div>
@@ -44,12 +51,9 @@
 		                <li><a href="<?php the_sub_field('post'); ?>"><?php the_sub_field('name'); ?></a></li>
 		            <?php endwhile; ?>
 	    		</ul>
-
 	    	</div>
 	    </div>
     <?php endif; ?>
-
-    
 
 	<?php if ( comments_open() || get_comments_number() ) { ?>
 		<!-- COMMENTS -->
@@ -58,7 +62,7 @@
     	</div>
  	<?php } ?>
 	<?php endwhile; ?>
-    
+
 </div>
 
 <?php get_footer(); ?>

@@ -1,34 +1,50 @@
 <?php
 /**
  * The template for displaying archive pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since Twenty Twenty-One 1.0
  */
 
 get_header();
 
 $description = get_the_archive_description();
+$title = get_the_archive_title();
 ?>
 
 <?php if ( have_posts() ) : ?>
 
-	<header class="page-header alignwide">
-		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-		<?php if ( $description ) : ?>
-			<div class="archive-description"><?php echo wp_kses_post( wpautop( $description ) ); ?></div>
-		<?php endif; ?>
-	</header><!-- .page-header -->
+<div class="container-cs">
 
-	<?php while ( have_posts() ) : ?>
-		<?php the_post(); ?>
-		<?php get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) ); ?>
-	<?php endwhile; ?>
+    <div class="breadcrumbs">
+        <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }
+        ?>
+    </div>
 
-	<?php twenty_twenty_one_the_posts_navigation(); ?>
+    <!-- CONTENT -->
+    <div class="sp-pt-40 sp-pb-60 sp-pb-lg-40">
+        <?php if ( $title ) : ?>
+            <h1 class="h2 sp-mb-20 sp-mb-lg-15"><?php echo wp_kses_post( wpautop( $title ) ); ?></h1>
+        <?php endif; ?>
+        <?php if ( $description ) : ?>
+            <div class="text sp-mb-30"><?php echo wp_kses_post( wpautop( $description ) ); ?></div>
+        <?php endif; ?>
+
+        <?php while ( have_posts() ) : ?>
+            <div class="block-98723">
+                <!--
+                <div class="block-98723__title h3 fw-bold sp-mb-20"><span class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-009.png" alt="icon"></span><span>List:</span></div>
+                -->
+                <ul class="block-98723__list type2">
+                    <?php the_post(); ?>
+                    <?php get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) ); ?>
+                </ul>
+            </div>
+        <?php endwhile; ?>
+    </div>
+
+</div>
+
 
 <?php else : ?>
 	<?php get_template_part( 'template-parts/content/content-none' ); ?>

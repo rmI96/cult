@@ -30,17 +30,16 @@ $title = get_the_archive_title();
             <div class="text sp-mb-30"><?php echo wp_kses_post( wpautop( $description ) ); ?></div>
         <?php endif; ?>
 
-        <?php while ( have_posts() ) : ?>
-            <div class="block-98723">
-                <!--
-                <div class="block-98723__title h3 fw-bold sp-mb-20"><span class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-009.png" alt="icon"></span><span>List:</span></div>
-                -->
-                <ul class="block-98723__list type2">
+        <div class="block-98723">
+            <ul class="block-98723__list type2">
+                <?php while ( have_posts() ) : ?>
                     <?php the_post(); ?>
                     <?php get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) ); ?>
-                </ul>
-            </div>
-        <?php endwhile; ?>
+                <?php endwhile; ?>
+            </ul>
+        </div>
+
+
     </div>
 
 </div>

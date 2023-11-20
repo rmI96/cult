@@ -343,8 +343,10 @@
       padding: 0 5px;
     }
     &.type2{
+      margin-bottom: -20px;
       li{
         flex: 0 0 100%;
+        margin-bottom: 20px;
       }
     }
   }

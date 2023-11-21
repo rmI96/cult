@@ -179,12 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
         /*###############*/
 
         if(jQuery(window).width() > 991){
-            new Rellax('.rellax', {
-                center: true
-            });
-        }
-
-        if(jQuery(window).width() > 991){
             jQuery('.move-objects').parallax();
         }
 

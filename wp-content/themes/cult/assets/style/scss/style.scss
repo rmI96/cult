@@ -296,6 +296,11 @@
       }
     }
     > span{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .in-text{
+      display: inline-block;
       vertical-align: middle;
     }
   }
@@ -428,6 +433,9 @@
 }
 
 /* OTHER */
+.inline-block{
+  display: inline-block;
+}
 @media (max-width: 768px) {
   .h1, h1 {
     font-size: 2.2rem;

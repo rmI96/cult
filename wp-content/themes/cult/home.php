@@ -6,7 +6,7 @@ Template Name: home
 
 <?php get_header() ?>
 
-<div class="banner">
+<secrion class="banner">
 	<div class="banner-inner">
 
 		<div class="wr-hd">
@@ -19,9 +19,9 @@ Template Name: home
 			<div class="text-center banner-text small">
 				<div class="width-limited">
 
-					<div class="h1 color-white">
+					<h1 class="h1 color-white">
                         <?php the_field('home_title_of__banner'); ?>
-					</div>
+					</h1>
 
 				</div>
 			</div>
@@ -29,7 +29,7 @@ Template Name: home
 
 		<a href="#first-section" class="btn btn-scrolling on-scroll"><span class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mouse.svg" alt=""></span></a>
 	</div>
-</div>
+</secrion>
 
 <div class="container-cs">
     <div class="sp-pt-100 sp-pt-lg-40" id="first-section">
@@ -55,25 +55,25 @@ Template Name: home
             <div id="calculator__history"></div>
         </div>
     </div>
-    <div class="sp-pt-60 sp-pt-lg-40">
+    <section class="sp-pt-60 sp-pt-lg-40">
         <div class="block-98723">
-            <div class="block-98723__title h3 fw-bold sp-mb-20"><span class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-012.png" alt="icon"></span><span><?php the_field('home_title_of_catalog'); ?></span></div>
+            <div class="block-98723__title h3 fw-bold sp-mb-20"><span class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-012.png" alt="icon"></span><h2 class="in-text"><?php the_field('home_title_of_catalog'); ?></h2></div>
             <ul class="block-98723__list">
                 <?php while( have_rows('home_catalog', ) ): the_row(); ?>
-                    <li><a href="/category/<?php get_category_link( the_sub_field('url') ); ?>"><?php the_sub_field('name'); ?></a></li>
+                    <li><a href="/category/<?php get_category_link( the_sub_field('url') ); ?>"><h3 class="inline-block"><?php the_sub_field('name'); ?></h3></a></li>
                 <?php endwhile; ?>
             </ul>
         </div>
-    </div>
+    </section>
     <div class="sp-pt-60 sp-pt-lg-40 text-center">
         <?php get_search_form(); ?>
     </div>
-    <div class="sp-pt-60 sp-pb-60 sp-pt-lg-40 sp-pb-lg-40">
-        <div class="h2 sp-mb-20 sp-mb-lg-15"><?php the_field('home_title'); ?></div>
+    <section class="sp-pt-60 sp-pb-60 sp-pt-lg-40 sp-pb-lg-40">
+        <h2 class="h2 sp-mb-20 sp-mb-lg-15"><?php the_field('home_title'); ?></h2>
         <div class="text">
             <?php the_field('home_content'); ?>
         </div>
-    </div>
+    </section>
 </div>
 
 <?php get_footer(); ?>

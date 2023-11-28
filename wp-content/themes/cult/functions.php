@@ -29,6 +29,7 @@ if( function_exists('acf_add_options_page') ) {
     acf_add_options_sub_page('Header');
     acf_add_options_sub_page('Footer');
     acf_add_options_sub_page('Post');
+    acf_add_options_sub_page('Search');
 }
 
 function prefix_category_title( $title ) {

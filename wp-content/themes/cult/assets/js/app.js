@@ -177,15 +177,17 @@ document.addEventListener('DOMContentLoaded', () => {
         /*###############*/
         /* Parallax */
         /*###############*/
-
+        /*
         if(jQuery(window).width() > 991){
             jQuery('.move-objects').parallax();
         }
+        */
 
 
         /*###############*/
         /* Scroll */
         /*###############*/
+        /*
         jQuery('a.on-scroll').on('click', function(event){
             event.preventDefault();
 
@@ -195,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
             jQuery('body,html').animate({scrollTop: t}, 800);
 
         });
-
+        */
 
     })();
 

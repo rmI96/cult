@@ -14,10 +14,11 @@ function yout_scripts() {
     /*
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/libs/jquery/jquery.min.js?2');
     wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/assets/libs/smoothscroll/smoothscroll.js', array('jquery'));
-    */
+
     wp_enqueue_script( 'parallax', get_template_directory_uri() . '/assets/libs/parallax/parallax.js', array('jquery'));
-    wp_enqueue_script( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/js/calculate.js?8', array('jquery'));
-    wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.js?2', array('jquery') );
+    */
+    wp_enqueue_script( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/js/calculate.js?8');
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.js?98');
 
 }
 

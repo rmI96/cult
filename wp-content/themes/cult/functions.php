@@ -6,16 +6,18 @@
 add_action( 'wp_enqueue_scripts', 'yout_scripts' );
 function yout_scripts() {
 
-    wp_enqueue_style( 'grid', get_template_directory_uri() . '/assets/libs/bootstrap-grid/bootstrap-grid.min.css' );
-    wp_enqueue_style( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/css/calculate.css?122' );
-   	wp_enqueue_style( 'style-01', get_template_directory_uri() . '/assets/style/app.min.css?0999' );
+    wp_enqueue_style( 'grid', get_template_directory_uri() . '/assets/libs/bootstrap-grid/bootstrap-grid.min.css?1' );
+    wp_enqueue_style( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/css/calculate.css?9' );
+   	wp_enqueue_style( 'style-01', get_template_directory_uri() . '/assets/style/app.min.css?9' );
     wp_enqueue_style( 'style-02', get_template_directory_uri() . '/assets/style/css/style.css?s2' );
     wp_enqueue_style( 'style-03', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 
-    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/libs/jquery/jquery.min.js');
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/libs/jquery/jquery.min.js?2');
+    /*
     wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/assets/libs/smoothscroll/smoothscroll.js', array('jquery'));
+    */
     wp_enqueue_script( 'parallax', get_template_directory_uri() . '/assets/libs/parallax/parallax.js', array('jquery'));
-    wp_enqueue_script( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/js/calculate.js?35', array('jquery'));
+    wp_enqueue_script( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/js/calculate.js?8', array('jquery'));
     wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.js?2', array('jquery') );
 
 }

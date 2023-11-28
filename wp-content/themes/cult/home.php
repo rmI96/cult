@@ -6,7 +6,7 @@ Template Name: home
 
 <?php get_header() ?>
 
-<secrion class="banner">
+<div class="banner">
 	<div class="banner-inner">
 
 		<div class="wr-hd">
@@ -29,7 +29,7 @@ Template Name: home
 
 		<a href="#first-section" class="btn btn-scrolling on-scroll"><span class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mouse.svg" alt=""></span></a>
 	</div>
-</secrion>
+</div>
 
 <div class="container-cs">
     <div class="sp-pt-100 sp-pt-lg-40" id="first-section">
@@ -55,7 +55,7 @@ Template Name: home
             <div id="calculator__history"></div>
         </div>
     </div>
-    <section class="sp-pt-60 sp-pt-lg-40">
+    <div class="sp-pt-60 sp-pt-lg-40">
         <div class="block-98723">
             <div class="block-98723__title h3 fw-bold sp-mb-20"><span class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-012.png" alt="icon"></span><h2 class="in-text"><?php the_field('home_title_of_catalog'); ?></h2></div>
             <ul class="block-98723__list">
@@ -64,16 +64,16 @@ Template Name: home
                 <?php endwhile; ?>
             </ul>
         </div>
-    </section>
+    </div>
     <div class="sp-pt-60 sp-pt-lg-40 text-center">
         <?php get_search_form(); ?>
     </div>
-    <section class="sp-pt-60 sp-pb-60 sp-pt-lg-40 sp-pb-lg-40">
+    <div class="sp-pt-60 sp-pb-60 sp-pt-lg-40 sp-pb-lg-40">
         <h2 class="h2 sp-mb-20 sp-mb-lg-15"><?php the_field('home_title'); ?></h2>
         <div class="text">
             <?php the_field('home_content'); ?>
         </div>
-    </section>
+    </div>
 </div>
 
 <?php get_footer(); ?>

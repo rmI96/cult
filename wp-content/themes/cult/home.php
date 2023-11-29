@@ -11,7 +11,7 @@ Template Name: home
 
 		<div class="wr-hd">
 			<div class='move-objects' data-scalar-x="4" data-scalar-y="3">
-				<div class="layer bg style-2" data-depth="0.8" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/image-08.jpg')"></div>
+				<div class="layer bg style-2" data-depth="0.8" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/image-0023.webp')"></div>
 			</div>
 		</div>
 

@@ -1,4 +1,4 @@
-<?php 
+<?php
     global $wp;
 ?>
 <!--footer-->
@@ -42,6 +42,14 @@
 <!--/footer-->
 
 </div>
+
+<style>
+    #loader-wrapper{
+        display: none!important;
+        z-index: -999999;
+        visibility: hidden;
+    }
+</style>
 
 <?php wp_footer(); ?>
 

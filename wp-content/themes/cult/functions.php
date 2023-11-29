@@ -3,14 +3,27 @@
  * Yout functions and definitions
  */
 
-add_action( 'wp_enqueue_scripts', 'yout_scripts' );
-function yout_scripts() {
+add_action( 'wp_enqueue_scripts', 'cult_scripts' );
+function cult_scripts() {
 
     wp_enqueue_style( 'grid', get_template_directory_uri() . '/assets/libs/bootstrap-grid/bootstrap-grid.min.css?1' );
     wp_enqueue_style( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/css/calculate.min.css?11' );
-   	wp_enqueue_style( 'style-01', get_template_directory_uri() . '/assets/style/app.min.css?9' );
+   	wp_enqueue_style( 'style-01', get_template_directory_uri() . '/assets/style/app.min.css?11' );
     wp_enqueue_style( 'style-02', get_template_directory_uri() . '/assets/style/css/style.css?s2' );
     wp_enqueue_style( 'style-03', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+    /*
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/libs/jquery/jquery.min.js?2');
+    wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/assets/libs/smoothscroll/smoothscroll.js', array('jquery'));
+    wp_enqueue_script( 'parallax', get_template_directory_uri() . '/assets/libs/parallax/parallax.js', array('jquery'));
+
+    wp_enqueue_script( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/js/calculate.min.js?9');
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.js?98');
+    */
+
+}
+
+add_action('wp_footer', 'cult_scripts_footer');
+function cult_scripts_footer() {
     /*
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/libs/jquery/jquery.min.js?2');
     wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/assets/libs/smoothscroll/smoothscroll.js', array('jquery'));

@@ -27,7 +27,7 @@ Template Name: home
 			</div>
 		</div>
 
-		<a href="#first-section" class="btn btn-scrolling on-scroll"><span class="icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mouse.svg" alt=""></span></a>
+		<a href="#first-section" class="btn btn-scrolling on-scroll"><span class="icon" style="font-size: 0; color: rgba(1,1,1,0);"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/mouse.svg" alt="icon scroll">Scroll</span></a>
 	</div>
 </div>
 

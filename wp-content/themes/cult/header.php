@@ -19,8 +19,9 @@
 </head>
 
 <body>
-
+<!--
 <div id="loader-wrapper"></div>
+-->
 
 <div id="content-block" class="header-sp">
 

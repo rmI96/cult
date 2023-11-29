@@ -55,12 +55,15 @@
 	    </div>
     <?php endif; ?>
 
+
 	<?php if ( comments_open() || get_comments_number() ) { ?>
-		<!-- COMMENTS -->
+        <!--
 		<div class="comments-container__wpDiscuz">
-        	<?php comments_template() ?>
+        	<?php //  comments_template() ?>
     	</div>
+    	-->
  	<?php } ?>
+
 	<?php endwhile; ?>
 
 </div>

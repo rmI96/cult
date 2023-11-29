@@ -25,10 +25,12 @@ Template Name: main
     </div>
 
     <!-- COMMENTS -->
+    <!--
     <div class="comments-container__wpDiscuz">
-        <?php comments_template() ?>
+        <?php // comments_template() ?>
     </div>
-    
+    -->
+
 </div>
 
 <?php the_field('main_scripts') ?>

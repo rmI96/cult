@@ -33,7 +33,7 @@ Template Name: home
 
 <div class="container-cs">
     <div class="sp-pt-100 sp-pt-lg-40" id="first-section">
-        <div class="calculatorS">
+        <div id="calculatorS" class="calculatorS">
             <div id="calculator__in-put"></div>
             <div id="calculator__out-put"></div>
             <div class="calculatorS__inner">

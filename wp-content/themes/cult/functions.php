@@ -29,7 +29,7 @@ function cult_scripts_footer() {
     wp_enqueue_script( 'smoothscroll', get_template_directory_uri() . '/assets/libs/smoothscroll/smoothscroll.js', array('jquery'));
     wp_enqueue_script( 'parallax', get_template_directory_uri() . '/assets/libs/parallax/parallax.js', array('jquery'));
     */
-    wp_enqueue_script( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/js/calculate.min.js?9');
+    wp_enqueue_script( 'calculator', get_template_directory_uri() . '/assets/libs/calculator/js/calculate.min.js?43');
     wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.js?98');
 
 }
